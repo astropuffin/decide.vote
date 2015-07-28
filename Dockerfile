@@ -8,4 +8,5 @@ EXPOSE 80
 ENTRYPOINT ["rails", "server", "-b", "0.0.0.0","-p","80"]
 
 #from here on we're working on app specific stuff
-#COPY web /web RUN bundle install --without production
+COPY web /web
+RUN bundle install
