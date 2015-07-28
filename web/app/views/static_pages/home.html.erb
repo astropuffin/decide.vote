@@ -1,6 +1,10 @@
-<% provide(:title, "Home") %>
+<div class="center jumotron">
 <h1>decide.vote home</h1>
 <p>
 Learn how Single Transferable Voting works here: 
 <a href="https://www.youtube.com/watch?v=l8XOZJkozfI">Politics in the Animal Kingdom<a>
+<br><%= link_to "Make a new decision!", '#', class: "btn btn-lg btn-primary" %>
 </p>
+</div>
+<%= link_to image_tag("vote.jpg", alt: "Decide.vote"),
+            'http://decide.vote/' %>
